@@ -13,6 +13,7 @@
 		3C1BE59428D1223C008BAEAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1BE59228D1223C008BAEAC /* Main.storyboard */; };
 		3C1BE59628D12244008BAEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C1BE59528D12244008BAEAC /* Assets.xcassets */; };
 		3C1BE59928D12244008BAEAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1BE59728D12244008BAEAC /* LaunchScreen.storyboard */; };
+		3C1BE5A128D13FAA008BAEAC /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1BE5A028D13FA9008BAEAC /* TabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3C1BE59528D12244008BAEAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C1BE59828D12244008BAEAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C1BE59A28D12244008BAEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C1BE5A028D13FA9008BAEAC /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3C1BE59528D12244008BAEAC /* Assets.xcassets */,
 				3C1BE59728D12244008BAEAC /* LaunchScreen.storyboard */,
 				3C1BE59A28D12244008BAEAC /* Info.plist */,
+				3C1BE5A028D13FA9008BAEAC /* TabController.swift */,
 			);
 			path = recON;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C1BE59128D1223C008BAEAC /* ViewController.swift in Sources */,
+				3C1BE5A128D13FAA008BAEAC /* TabController.swift in Sources */,
 				3C1BE58D28D1223C008BAEAC /* AppDelegate.swift in Sources */,
 				3C1BE58F28D1223C008BAEAC /* SceneDelegate.swift in Sources */,
 			);
@@ -306,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
