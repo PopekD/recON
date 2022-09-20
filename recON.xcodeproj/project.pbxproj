@@ -14,6 +14,7 @@
 		3C1BE59628D12244008BAEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C1BE59528D12244008BAEAC /* Assets.xcassets */; };
 		3C1BE59928D12244008BAEAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1BE59728D12244008BAEAC /* LaunchScreen.storyboard */; };
 		3C1BE5A128D13FAA008BAEAC /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1BE5A028D13FA9008BAEAC /* TabController.swift */; };
+		3C90A25328D8961F001BB54B /* Notifications_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C90A25228D8961F001BB54B /* Notifications_VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3C1BE59828D12244008BAEAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C1BE59A28D12244008BAEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C1BE5A028D13FA9008BAEAC /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		3C90A25228D8961F001BB54B /* Notifications_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications_VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3C1BE59728D12244008BAEAC /* LaunchScreen.storyboard */,
 				3C1BE59A28D12244008BAEAC /* Info.plist */,
 				3C1BE5A028D13FA9008BAEAC /* TabController.swift */,
+				3C90A25228D8961F001BB54B /* Notifications_VC.swift */,
 			);
 			path = recON;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C1BE59128D1223C008BAEAC /* ViewController.swift in Sources */,
+				3C90A25328D8961F001BB54B /* Notifications_VC.swift in Sources */,
 				3C1BE5A128D13FAA008BAEAC /* TabController.swift in Sources */,
 				3C1BE58D28D1223C008BAEAC /* AppDelegate.swift in Sources */,
 				3C1BE58F28D1223C008BAEAC /* SceneDelegate.swift in Sources */,
