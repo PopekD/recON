@@ -4,16 +4,20 @@ import NotificationCenter
 class ViewController: UIViewController{
     
     @IBOutlet var tableView: UITableView!
+    var timer: Timer?
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         askforPermission()
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        DispatchQueue.main.async {
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {_ in
             self.tableView.reloadData()
-            
+            for i in updateTable.sorted(by: <){
+                if i.1 <= Date(){
+                    updateTable.removeValue(forKey: i.0)
+                    tableTitle.removeValue(forKey: i.0)
+                }
+            }
         }
     }
     public static var vc_table = ViewController()
@@ -30,16 +34,22 @@ class ViewController: UIViewController{
 
 extension ViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        return updateTable.count
     }
 }
 
 extension ViewController:UITableViewDataSource{
     func tableView(_ tableVIew: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = models[indexPath.row].title
-        dateFormatter.dateFormat = "YY/MM/dd hh:mm"
-        cell.detailTextLabel?.text = "Will appear on \(dateFormatter.string(from:models[indexPath.row].date))"
+        
+        
+        print(tableTitle.sorted(by: >)[indexPath.row].1)
+        cell.textLabel?.text = tableTitle.sorted(by: <)[indexPath.row].1
+
+        dateFormatter.dateFormat = "YYYY/MM/dd hh:mm"
+        cell.detailTextLabel?.text = "Will appear on \(dateFormatter.string(from:updateTable.sorted(by: <)[indexPath.row].1))"
+        
         return cell
     }
 }
