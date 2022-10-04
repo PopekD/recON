@@ -11,8 +11,8 @@ class Notifications_VC: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myTitle.becomeFirstResponder()
-        myBody.becomeFirstResponder()
+        myTitle.delegate = self
+        myBody.delegate = self
         datePicker.minimumDate = Date()
     }
     public static var vc_notifications = Notifications_VC()
@@ -47,6 +47,13 @@ class Notifications_VC: UIViewController{
                 }
             })
         }
+    }
+}
+extension Notifications_VC: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        myTitle.resignFirstResponder()
+        myBody.resignFirstResponder()
+        return true
     }
 }
 struct Mystruct{
